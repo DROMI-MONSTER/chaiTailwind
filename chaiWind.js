@@ -8,6 +8,7 @@ const defaultAttribute = {
     'pr': 'padding-right',
     'pt': 'padding-top',
     'pb': 'padding-bottom',
+    "m": "margin",
     'ml': 'margin-left',
     'mr': 'margin-right',
     'mt': 'margin-top',
