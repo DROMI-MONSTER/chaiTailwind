@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <title>ChaiWind | The Inline Engine</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            border-style: solid;
+            border-width: 0;
+            line-height: 1.6;
+
+            scrollbar-width: thin;
+            scrollbar-color: #f97316 #09090b;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #09090b;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #f97316;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: #09090b;
+        }
+    </style>
+
+
+    <script type="module" src="./chaiWind.js" defer></script>
+</head>
+
+<body class="chai-bg-zinc-950 chai-textColor-zinc-50 chai-w-wfull">
+
+
+    <nav
+        class="chai-flex chai-row chai-justify-between chai-items-center chai-p-4 chai-pl-10 chai-pr-10 chai-bg-zinc-950 chai-border-px chai-borderColor-zinc-900 chai-pos-sticky chai-top-0 chai-z-full">
+        <div
+            class="chai-text-6 chai-textColor-orange-500 chai-font-bold chai-flex chai-row chai-items-center chai-g-2 chai-cursor-pointer">
+            ☕ ChaiWind
+        </div>
+
+        <div class="chai-flex chai-row chai-g-6 chai-items-center">
+            <div class="chai-text-4 chai-textColor-zinc-300 chai-font-medium chai-cursor-pointer">Documentation</div>
+            <div class="chai-text-4 chai-textColor-zinc-300 chai-font-medium chai-cursor-pointer">Tokens</div>
+            <button
+                class="chai-bg-orange-500 chai-textColor-zinc-950 chai-p-2 chai-pl-6 chai-pr-6 chai-borderRadii-1.5 chai-text-4 chai-font-bold chai-cursor-pointer chai-shadow-glow">
+                Terminal
+            </button>
+        </div>
+    </nav>
+
+
+    <header class="chai-flex chai-col chai-items-center chai-justify-center chai-p-20 chai-pt-24 chai-pb-24 chai-g-8">
+
+        <div
+            class="chai-bg-zinc-900 chai-textColor-orange-500 chai-p-1.5 chai-pl-4 chai-pr-4 chai-borderRadii-10 chai-border-px chai-borderColor-zinc-800 chai-text-3 chai-font-semibold">
+            🚀 Inline Engine v2.0 Live
+        </div>
+
+        <h1 class="chai-text-16 chai-font-bold chai-align-center">
+            Direct DOM styling. <br>
+            <span class="chai-textColor-orange-500">Brewed for speed.</span>
+        </h1>
+
+        <p class="chai-text-5 chai-textColor-zinc-400 chai-align-center chai-max-wfull">
+            A lightweight, zero-build CSS utility engine. Skip the compilers and watch as ChaiWind parses your node tree
+            to inject OkLCH colors and responsive tokens directly into your markup.
+        </p>
+
+        <div class="chai-flex chai-row chai-g-4 chai-mt-4">
+            <button
+                class="chai-bg-orange-500 chai-textColor-zinc-950 chai-p-4 chai-pl-8 chai-pr-8 chai-borderRadii-2 chai-font-bold chai-text-4 chai-cursor-pointer chai-shadow-glow">
+                Explore The Codebase
+            </button>
+        </div>
+
+        <div
+            class="chai-mt-10 chai-borderRadii-4 chai-shadow-glow chai-border-px chai-borderColor-zinc-800 chai-w-wfull chai-flex chai-justify-center chai-bg-zinc-900">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop"
+                class="chai-w-wfull chai-borderRadii-4" alt="ChaiCode Workspace">
+        </div>
+    </header>
+
+
+    <section
+        class="chai-flex chai-col chai-items-center chai-bg-zinc-900 chai-p-20 chai-border-px chai-borderColor-zinc-800 chai-g-10">
+
+        <div class="chai-flex chai-col chai-items-center chai-g-2">
+            <h2 class="chai-text-10 chai-font-bold chai-textColor-zinc-50">Core Ingredients</h2>
+            <p class="chai-text-4 chai-textColor-zinc-400 chai-align-center">Everything you need to build stunning
+                interfaces instantly, powered by DOM parsing.</p>
+        </div>
+
+        <div class="chai-flex chai-col chai-g-8 chai-items-center">
+
+            <div class="chai-flex chai-row chai-justify-center chai-g-8">
+
+                <div
+                    class="chai-flex chai-col chai-g-4 chai-bg-zinc-950 chai-p-8 chai-borderRadii-4 chai-border-px chai-borderColor-zinc-800 chai-shadow-card chai-pos-relative chai-w-80">
+                    <div class="chai-pos-absolute chai-top-0 chai-left-0 chai-right-0 chai-h-1 chai-bg-orange-500">
+                    </div>
+                    <div class="chai-text-10">⚡</div>
+                    <h3 class="chai-text-6 chai-font-bold chai-textColor-zinc-50">DOM Parser</h3>
+                    <p class="chai-text-4 chai-textColor-zinc-400">Traverses the node tree instantly. By slicing class
+                        strings and mapping to object keys, the engine scopes styles exactly where they belong.</p>
+                </div>
+
+                <div
+                    class="chai-flex chai-col chai-g-4 chai-bg-zinc-950 chai-p-8 chai-borderRadii-4 chai-border-px chai-borderColor-zinc-800 chai-shadow-card chai-pos-relative chai-w-80">
+                    <div class="chai-pos-absolute chai-top-0 chai-left-0 chai-right-0 chai-h-1 chai-bg-orange-500">
+                    </div>
+                    <div class="chai-text-10">🎨</div>
+                    <h3 class="chai-text-6 chai-font-bold chai-textColor-zinc-50">OKLCH Palette</h3>
+                    <p class="chai-text-4 chai-textColor-zinc-400">Comes strapped with a beautifully crafted color
+                        system out of the box, ensuring perceptually uniform palettes for deep dark modes.</p>
+                </div>
+
+                <div
+                    class="chai-flex chai-col chai-g-4 chai-bg-zinc-950 chai-p-8 chai-borderRadii-4 chai-border-px chai-borderColor-zinc-800 chai-shadow-card chai-pos-relative chai-w-80">
+                    <div class="chai-pos-absolute chai-top-0 chai-left-0 chai-right-0 chai-h-1 chai-bg-orange-500">
+                    </div>
+                    <div class="chai-text-10">📐</div>
+                    <h3 class="chai-text-6 chai-font-bold chai-textColor-zinc-50">Fluid Units</h3>
+                    <p class="chai-text-4 chai-textColor-zinc-400">Map layouts directly to standard pixel intervals or
+                        viewport units with absolute precision using standard mapping arrays.</p>
+                </div>
+
+            </div>
+
+            <div class="chai-flex chai-row chai-justify-center chai-g-8">
+
+                <div
+                    class="chai-flex chai-col chai-g-4 chai-bg-zinc-950 chai-p-8 chai-borderRadii-4 chai-border-px chai-borderColor-zinc-800 chai-shadow-card chai-pos-relative chai-w-80">
+                    <div class="chai-pos-absolute chai-top-0 chai-left-0 chai-right-0 chai-h-1 chai-bg-orange-500">
+                    </div>
+                    <div class="chai-text-10">🛠️</div>
+                    <h3 class="chai-text-6 chai-font-bold chai-textColor-zinc-50">Zero Config</h3>
+                    <p class="chai-text-4 chai-textColor-zinc-400">No postcss.config.js, no tailwind.config.js. Just
+                        link the `chaiWind.js` script tag and start writing utility classes.</p>
+                </div>
+
+
+                <div
+                    class="chai-flex chai-col chai-g-4 chai-bg-zinc-950 chai-p-8 chai-borderRadii-4 chai-border-px chai-borderColor-zinc-800 chai-shadow-card chai-pos-relative chai-w-80">
+                    <div class="chai-pos-absolute chai-top-0 chai-left-0 chai-right-0 chai-h-1 chai-bg-orange-500">
+                    </div>
+                    <div class="chai-text-10">💉</div>
+                    <h3 class="chai-text-6 chai-font-bold chai-textColor-zinc-50">Inline Injection</h3>
+                    <p class="chai-text-4 chai-textColor-zinc-400">Instead of appending massive stylesheets, the script
+                        writes directly to the style attribute, keeping CSS payloads nonexistent.</p>
+                </div>
+
+
+                <div
+                    class="chai-flex chai-col chai-g-4 chai-bg-zinc-950 chai-p-8 chai-borderRadii-4 chai-border-px chai-borderColor-zinc-800 chai-shadow-card chai-pos-relative chai-w-80">
+                    <div class="chai-pos-absolute chai-top-0 chai-left-0 chai-right-0 chai-h-1 chai-bg-orange-500">
+                    </div>
+                    <div class="chai-text-10">🌐</div>
+                    <h3 class="chai-text-6 chai-font-bold chai-textColor-zinc-50">Agnostic Base</h3>
+                    <p class="chai-text-4 chai-textColor-zinc-400">Works in vanilla HTML, React, Vue, or Svelte. Because
+                        it queries the DOM directly, it plays nicely with any rendering framework.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="chai-flex chai-col chai-items-center chai-bg-zinc-950 chai-p-24 chai-g-10">
+
+        <div class="chai-flex chai-col chai-items-center chai-g-2">
+            <h2 class="chai-text-12 chai-font-bold chai-textColor-zinc-50">The Bitter Truth</h2>
+            <p class="chai-text-5 chai-textColor-zinc-400">How ChaiWind stacks up against the giant.</p>
+        </div>
+
+
+        <div
+            class="chai-bg-zinc-900 chai-borderRadii-4 chai-shadow-card  chai-borderColor-orange-500 chai-overflow-hidden">
+
+            <table class="chai-align-left">
+
+                <thead class="chai-bg-zinc-950">
+                    <tr class="chai-border-px chai-borderColor-orange-500">
+                        <th class="chai-p-6 chai-pl-10 chai-font-bold chai-textColor-zinc-50 chai-text-5">Feature Area
+                        </th>
+                        <th class="chai-p-6 chai-font-bold chai-textColor-orange-500 chai-text-5">☕ ChaiWind</th>
+                        <th class="chai-p-6 chai-font-bold chai-textColor-zinc-400 chai-text-5">💨 Tailwind CSS</th>
+                    </tr>
+                </thead>
+
+
+                <tbody>
+                    <tr class="chai-border-px chai-borderColor-orange-500">
+                        <td class="chai-p-6 chai-pl-10 chai-textColor-zinc-300 chai-font-bold chai-text-4">Architecture
+                        </td>
+                        <td class="chai-p-6 chai-textColor-zinc-50 chai-text-4">Client-side DOM Parser (Runtime)</td>
+                        <td class="chai-p-6 chai-textColor-zinc-500 chai-text-4">PostCSS Compiler (Build time)</td>
+                    </tr>
+
+                    <tr class="chai-border-px chai-borderColor-orange-500">
+                        <td class="chai-p-6 chai-pl-10 chai-textColor-zinc-300 chai-font-bold chai-text-4">Style
+                            Delivery</td>
+                        <td class="chai-p-6 chai-textColor-zinc-50 chai-text-4">Injected via Inline <code
+                                class="chai-textColor-orange-500">style</code></td>
+                        <td class="chai-p-6 chai-textColor-zinc-500 chai-text-4">External generated <code
+                                class="chai-textColor-zinc-400">.css</code> file</td>
+                    </tr>
+
+                    <tr class="chai-border-px chai-borderColor-orange-500">
+                        <td class="chai-p-6 chai-pl-10 chai-textColor-zinc-300 chai-font-bold chai-text-4">Configuration
+                        </td>
+                        <td class="chai-p-6 chai-textColor-orange-500 chai-font-bold chai-text-4">Zero setup. Import
+                            script and go.</td>
+                        <td class="chai-p-6 chai-textColor-zinc-500 chai-text-4">Requires node modules & config file
+                        </td>
+                    </tr>
+
+                    <tr class="chai-border-px chai-borderColor-orange-500">
+                        <td class="chai-p-6 chai-pl-10 chai-textColor-zinc-300 chai-font-bold chai-text-4">
+                            Pseudo-classes (:hover)</td>
+                        <td class="chai-p-6 chai-textColor-zinc-500 chai-text-4">Not natively supported via inline CSS
+                        </td>
+                        <td class="chai-p-6 chai-textColor-zinc-400 chai-text-4">Fully supported out of the box</td>
+                    </tr>
+
+                    <tr class="chai-border-px chai-borderColor-orange-500">
+                        <td class="chai-p-6 chai-pl-10 chai-textColor-zinc-300 chai-font-bold chai-text-4">Performance
+                            Truth</td>
+                        <td class="chai-p-6 chai-textColor-zinc-500 chai-text-4">Heavier on JS thread on initial load
+                        </td>
+                        <td class="chai-p-6 chai-textColor-orange-500 chai-font-bold chai-text-4">Zero JS overhead. Pure
+                            CSS rendering</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </section>
+
+    <section
+        class="chai-flex chai-col chai-items-center chai-p-24 chai-g-8 chai-bg-zinc-900 chai-border-px chai-borderColor-zinc-800">
+        <h2 class="chai-text-11 chai-font-bold chai-textColor-zinc-50">Ready to brew your UI?</h2>
+        <button
+            class="chai-bg-orange-500 chai-textColor-zinc-950 chai-p-4 chai-pl-12 chai-pr-12 chai-borderRadii-2 chai-font-bold chai-text-5 chai-cursor-pointer chai-shadow-glow">
+            try chaiwind
+        </button>
+    </section>
+
+    <footer
+        class="chai-flex chai-row chai-justify-between chai-items-center chai-p-10 chai-bg-zinc-950  chai-borderColor-zinc-900 ">
+        <div class="chai-text-5 chai-font-bold chai-textColor-orange-500">☕ ChaiWind</div>
+        <div class="chai-text-3 chai-textColor-zinc-500 chai-font-medium">© 2026 ChaiCode. The Inline-First Engine.
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+    "name": "chaitailwind",
+    "version": "1.0.0",
+    "description": "",
+    "main": "chaiWind.js",
+    "scripts": {
+        "dev": "node "
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module"
+}
